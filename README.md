@@ -1,5 +1,7 @@
-# multimodal_network
+# Time series prediction with multimodal distributions - Building Mixture Density Network with Keras and Tensorflow Probability
 
-UNDER TINKERING :)
+The two most common neural network problems are regression and classification. One of the major differences between the two is that classification outputs the probability of a given class, while regression outputs the value of the predicted variable without any information about the uncertainty of the forecast. Even classification models output only rigid numbers, not distributions, but most of the time this approach is satisfactory to estimate the uncertainty of the prediction. Usually, we want something like "class B has a chance of 0.73", and not something like "according to our fitted normal distribution there is 60% chance, that the chance of class B is between 0.63 and 0.8".
 
-Demonstrate the usefulness of multi-modal distribution outputs for neural networks - Tensorflow Probability
+Tensorflow Probability is a library built on Tensorflow, which enables us to estimate the aleatoric uncertainty (known unknowns) and epistemic uncertainty (unknown unknowns) of our model and data, but Tensorflow Probability has much more use cases beyond neural networks.
+
+In this article, I will focus on the estimation of the known unknowns. Using Tensorflow Probability I will build an LSTM based time-series forecaster model, which can predict uncertainty and capture multimodal patterns if it exists in the data. These types of networks are called Mixture Density Networks.
