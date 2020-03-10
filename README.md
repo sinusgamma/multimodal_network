@@ -4,4 +4,4 @@ The two most common neural network problems are regression and classification. O
 
 Tensorflow Probability is a library built on Tensorflow, which enables us to estimate the aleatoric uncertainty (known unknowns) and epistemic uncertainty (unknown unknowns) of our model and data, but Tensorflow Probability has much more use cases beyond neural networks.
 
-In this article, I will focus on the estimation of the known unknowns. Using Tensorflow Probability I will build an LSTM based time-series forecaster model, which can predict uncertainty and capture multimodal patterns if it exists in the data. These types of networks are called Mixture Density Networks.
+In the notebook, I will focus on the estimation of the known unknowns. Using Tensorflow Probability I will build an LSTM based time-series forecaster model, which can predict uncertainty and capture multimodal patterns if it exists in the data. These types of networks are called Mixture Density Networks.
